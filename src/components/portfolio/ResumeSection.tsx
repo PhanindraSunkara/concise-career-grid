@@ -6,8 +6,8 @@ const ResumeSection = () => {
   const handleDownload = () => {
     // In a real implementation, this would trigger the download of an actual PDF file
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // This would be the actual path to your resume PDF
-    link.download = 'John_Portfolio_Resume.pdf';
+    link.href = 'https://drive.google.com/file/d/1Fg5rOSO_k1LXwnzL7yy1BtL9t0L4qIMb/view?usp=drivesdk'; // This would be the actual path to your resume PDF
+    link.download = 'Phanindra.Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -22,33 +22,35 @@ const ResumeSection = () => {
     {
       category: "Education",
       items: [
-        "Bachelor of Science in Computer Science",
-        "GPA: 3.8/4.0",
-        "Expected Graduation: 2026"
+        "Bachelor of Technology in Computer Science",
+        "GPA: 8.27/10",
       ]
     },
     {
       category: "Technical Skills",
       items: [
-        "Languages: JavaScript, TypeScript, Python, Java",
-        "Frontend: React, Vue.js, HTML5, CSS3, Tailwind CSS",
-        "Backend: Node.js, Express.js, MongoDB, PostgreSQL"
+        "Languages: Python, c, Java",
+        "Ai&ml: ML, DL, NLP, CNN, Resnet, MTCNN",
+        "Frameworks: Scilit-learn, Flask, Streamlit, Opencv",
+        "Database: Mysql, DBMS",
+        "Tools: Git, VS code, Pycharm, MS Office, Excel, Power Point
+        
       ]
     },
     {
       category: "Key Projects",
       items: [
-        "E-Commerce Platform - Full-stack application",
-        "Task Management App - Real-time collaboration",
-        "Weather Dashboard - API integration & visualization"
+        "Deep Fake Detection - Bachelors Thesis",
+        "Fashion Recommendation System - Internship work at Pheme software pvt.ltd",
+        "Plant Disease Detection - Course level Project"
       ]
     },
     {
       category: "Certifications",
       items: [
-        "AWS Certified Cloud Practitioner",
-        "Meta Front-End Developer Certificate",
-        "Google Analytics Certified"
+        "Microsoft Certified: Azure Ai Fundamentals(AI 900)",
+        "Microsoft Certified: Azure Fundamentals(AZ 900)",
+        "Neural Networks and deep learning (Coursera)"
       ]
     }
   ];
