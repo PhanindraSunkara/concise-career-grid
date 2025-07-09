@@ -33,7 +33,7 @@ const ResumeSection = () => {
         "Ai&ml: ML, DL, NLP, CNN, Resnet, MTCNN",
         "Frameworks: Scilit-learn, Flask, Streamlit, Opencv",
         "Database: Mysql, DBMS",
-        "Tools: Git, VS code, Pycharm, MS Office, Excel, Power Point
+        "Tools: Git, VS code, Pycharm, MS Office, Excel, Power Point"
         
       ]
     },
