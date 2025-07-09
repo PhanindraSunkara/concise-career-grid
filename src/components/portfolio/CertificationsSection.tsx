@@ -6,40 +6,34 @@ import { Award, ExternalLink, Calendar, CheckCircle } from "lucide-react";
 const CertificationsSection = () => {
   const certifications = [
     {
-      title: "AWS Certified Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: "December 2023",
-      credentialId: "AWS-CCP-2023-001",
-      status: "Active",
-      validUntil: "December 2026",
-      description: "Foundational understanding of AWS Cloud services, security, architecture, and pricing.",
-      skills: ["Cloud Computing", "AWS Services", "Security", "Pricing Models"],
-      verificationUrl: "https://aws.amazon.com/verification",
-      logo: "aws"
+      title: "Microsoft Certified: Azure AI Fundamentals(AI 900)",
+      issuer: "Microsoft",
+      date: "June 2024",
+      credentialId: "83F39FA8642E3734",
+      description: "validates a foundational understanding of artificial intelligence concepts and their implementation using Azure services..",
+      skills: ["Artificial Intelligence", "Machine Learning", "Deep Learning", "NLP"],
+      verificationUrl: "https://learn.microsoft.com/en-us/users/phanindrasai-3752/credentials/certification/azure-ai-fundamentals?tab=credentials-tab",
+      logo: "microsoft"
     },
     {
-      title: "Google Analytics Certified",
-      issuer: "Google",
-      date: "October 2023",
-      credentialId: "GA-2023-456",
-      status: "Active",
-      validUntil: "October 2024",
-      description: "Proficiency in Google Analytics including setup, configuration, and advanced analysis techniques.",
-      skills: ["Web Analytics", "Data Analysis", "Reporting", "Conversion Tracking"],
-      verificationUrl: "https://skillshop.exceedlms.com/student/path/2938",
-      logo: "google"
+      title: "Microsoft Azure Fundamentals",
+      issuer: "Microsoft",
+      date: "March 2023",
+      credentialId: "I650-3275",
+      description: "Foundational knowledge of cloud services and how they are provided with Microsoft Azure.",
+      skills: ["Cloud Concepts", "Azure core Services", "Security & Identity"],
+      verificationUrl: "https://learn.microsoft.com/en-us/users/phanindrasai-3752/certifications/certification-print/certification.azure-fundamentals?source=docs",
+      logo: "microsoft"
     },
     {
-      title: "Meta Front-End Developer Certificate",
-      issuer: "Meta (Facebook)",
-      date: "September 2023",
-      credentialId: "META-FE-789",
-      status: "Active",
-      validUntil: "Permanent",
+      title: "Neural Networks and Deep Learning",
+      issuer: "Coursera",
+      date: "March 2025",
+      credentialId: "BWBRIPEFFF4Z",
       description: "Comprehensive program covering React, JavaScript, HTML/CSS, version control, and UX/UI principles.",
-      skills: ["React", "JavaScript", "HTML/CSS", "Git", "UX/UI Design"],
-      verificationUrl: "https://www.coursera.org/account/accomplishments/specialization/",
-      logo: "meta"
+      skills: ["Computer Vision", "Artificial Neural Networks", "Performance Tuning", "Supervised Learning"],
+      verificationUrl: "https://coursera.org/verify/BWBRIPEFFF4Z",
+      logo: "coursera"
     },
     {
       title: "Microsoft Azure Fundamentals",
