@@ -1,39 +1,26 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Code, Palette, Database, Globe, Brain } from "lucide-react";
-
 const AboutSection = () => {
-  const skills = [
-    "Python", "C", "Java", "Machine Learning", "Deep Learning", "CNN", "NLP", 
-    "ResNet", "MTCNN", "Scikit-learn", "Flask", "Streamlit", "OpenCV", 
-    "SQL", "NoSQL", "Git", "VS Code"
-  ];
-
-  const highlights = [
-    {
-      icon: Code,
-      title: "Frontend Development",
-      description: "Creating responsive, interactive user interfaces with modern frameworks and libraries."
-    },
-    {
-      icon: Database,
-      title: "Backend Development", 
-      description: "Building robust APIs and server-side applications with focus on performance and scalability."
-    },
-    {
-      icon: Brain,
-      title: "AI/ML Applications",
-      description: "Developing end-to-end machine learning solutions for real world applications."
-    },
-    {
-      icon: Globe,
-      title: "Full Stack Solutions",
-      description: "End-to-end development from concept to deployment, ensuring seamless integration."
-    }
-  ];
-
-  return (
-    <section id="about" className="py-20 bg-section-bg">
+  const skills = ["Python", "C", "Java", "Machine Learning", "Deep Learning", "CNN", "NLP", "ResNet", "MTCNN", "Scikit-learn", "Flask", "Streamlit", "OpenCV", "SQL", "NoSQL", "Git", "VS Code"];
+  const highlights = [{
+    icon: Code,
+    title: "Frontend Development",
+    description: "Creating responsive, interactive user interfaces with modern frameworks and libraries."
+  }, {
+    icon: Database,
+    title: "Backend Development",
+    description: "Building robust APIs and server-side applications with focus on performance and scalability."
+  }, {
+    icon: Brain,
+    title: "AI/ML Applications",
+    description: "Developing end-to-end machine learning solutions for real world applications."
+  }, {
+    icon: Globe,
+    title: "Full Stack Solutions",
+    description: "End-to-end development from concept to deployment, ensuring seamless integration."
+  }];
+  return <section id="about" className="py-20 bg-section-bg">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
@@ -77,41 +64,21 @@ const AboutSection = () => {
             <div className="mt-8">
               <h4 className="text-lg font-semibold mb-4 text-foreground">Technical Skills</h4>
               <div className="flex flex-wrap gap-2">
-                {skills.map((skill, index) => (
-                  <Badge key={index} variant="secondary" className="text-sm">
+                {skills.map((skill, index) => <Badge key={index} variant="secondary" className="text-sm">
                     {skill}
-                  </Badge>
-                ))}
+                  </Badge>)}
               </div>
             </div>
           </div>
 
           {/* Highlights Grid */}
           <div className="grid gap-6 animate-slide-in-right">
-            {highlights.map((highlight, index) => (
-              <Card key={index} className="shadow-card hover:shadow-card-hover transition-all duration-300 hover:scale-105">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="p-3 bg-primary/10 rounded-lg">
-                      <highlight.icon className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-lg mb-2 text-foreground">
-                        {highlight.title}
-                      </h4>
-                      <p className="text-muted-foreground text-sm leading-relaxed">
-                        {highlight.description}
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+            {highlights.map((highlight, index) => <Card key={index} className="shadow-card hover:shadow-card-hover transition-all duration-300 hover:scale-105">
+                
+              </Card>)}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
