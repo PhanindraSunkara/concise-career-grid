@@ -4,9 +4,14 @@ import { Code, Palette, Database, Globe } from "lucide-react";
 
 const AboutSection = () => {
   const skills = [
-    "JavaScript", "TypeScript", "React", "Node.js", "Python", "Java",
-    "HTML/CSS", "Tailwind CSS", "Git", "Docker", "AWS", "MongoDB",
-    "PostgreSQL", "Express.js", "Next.js", "Vue.js", "Figma", "Adobe XD"
+   <div className="space-y-4 text-sm md:text-base">
+  <p>🖥 <strong>Programming Languages:</strong> Python, C, Java (basic)</p>
+  <p>🤖 <strong>AI/ML:</strong> Machine Learning, Deep Learning, CNN, NLP, ResNet, MTCNN</p>
+  <p>📊 <strong>Tools & Frameworks:</strong> Scikit-learn, Flask, Streamlit, OpenCV, CountVectorizer</p>
+  <p>🧠 <strong>Soft Skills:</strong> Teamwork, Communication, Adaptability, Time Management</p>
+  <p>🗃 <strong>Database:</strong> SQL, NoSQL</p>
+  <p>🧑‍💻 <strong>Others:</strong> Git, VS Code, MS Office, Excel, PowerPoint</p>
+  </div>
   ];
 
   const highlights = [
@@ -21,9 +26,9 @@ const AboutSection = () => {
       description: "Building robust APIs and server-side applications with focus on performance and scalability."
     },
     {
-      icon: Palette,
-      title: "UI/UX Design",
-      description: "Designing user-centered experiences with attention to usability and visual appeal."
+      icon: Brain,
+      title: "AI/ML Applications",
+      description: "Developing end-to-end machine learning solutions for real world applications."
     },
     {
       icon: Globe,
@@ -46,15 +51,16 @@ const AboutSection = () => {
           {/* About Content */}
           <div className="animate-fade-up">
             <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-foreground">
-              Hello! I'm a passionate developer building digital solutions.
+             Hello! I'm an AI & ML Enthusiast building intelligent digital solutions.
             </h3>
             
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I'm a dedicated Computer Science student with a strong foundation in both 
-                frontend and backend development. My journey in tech started with curiosity 
-                about how websites work, and has evolved into a passion for creating 
-                meaningful digital experiences.
+                I’m a passionate Computer Science graduate with hands-on experience in 
+                machine learning, computer vision, and full-stack development. My journey 
+                began with curiosity about how intelligent systems work and has evolved 
+                into building data-driven applications that solve real-world problems.
+
               </p>
               
               <p>
