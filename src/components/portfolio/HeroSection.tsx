@@ -37,14 +37,14 @@ const HeroSection = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-12">
             <Button variant="outline" size="lg" className="bg-white/10 border-white/30 text-white hover:bg-white hover:text-primary backdrop-blur-sm" asChild>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/PhanindraSunkara" target="_blank" rel="noopener noreferrer">
                 <Github className="w-5 h-5 mr-2" />
                 GitHub
               </a>
             </Button>
             
             <Button variant="outline" size="lg" className="bg-white/10 border-white/30 text-white hover:bg-white hover:text-primary backdrop-blur-sm" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/phanindra-sai-sunkara-11a412294" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-5 h-5 mr-2" />
                 LinkedIn
               </a>
