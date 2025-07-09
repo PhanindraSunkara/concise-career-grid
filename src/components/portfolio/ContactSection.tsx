@@ -50,20 +50,20 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "john.portfolio@email.com",
-      href: "mailto:john.portfolio@email.com"
+      value: "phanindrasai1102@email.com",
+      href: "mailto:phanindrasai1102@email.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 9676905457",
+      href: "tel:+91 9676905457"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "New York, NY",
-      href: "https://maps.google.com/?q=New+York,+NY"
+      value: "Vijayawada, Andhra Pradesh, India",
+      href: "https://maps.app.goo.gl/mhW5DeT9Q9ok9AbR7"
     }
   ];
 
@@ -71,20 +71,20 @@ const ContactSection = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com",
-      username: "@johnportfolio"
+      href: "https://github.com/PhanindraSunkara",
+      username: "PhanindraSunkara"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
-      username: "John Portfolio"
+      href: "https://www.linkedin.com/in/phanindra-sai-sunkara-11a412294",
+      username: "Phanindra Sai Sunkara"
     },
     {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com",
-      username: "@johnportfolio"
+      icon: Instagram,
+      label: "Instagram",
+      href: "https://www.instagram.com/phanindra_sunkara?igsh=ejNxM3d5YXcyeXR1",
+      username: "phanindra_sunkara"
     }
   ];
 
