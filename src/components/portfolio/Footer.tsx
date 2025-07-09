@@ -6,17 +6,17 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com",
+      href: "https://github.com/PhanindraSunkara",
       label: "GitHub"
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/phanindra-sai-sunkara-11a412294",
       label: "LinkedIn"
     },
     {
       icon: Mail,
-      href: "mailto:john.portfolio@email.com",
+      href: "phanindrasai1102@email.com",
       label: "Email"
     }
   ];
@@ -34,7 +34,7 @@ const Footer = () => {
             onClick={scrollToTop}
             className="text-2xl font-bold mb-4 hover:text-primary transition-colors"
           >
-            John Portfolio
+            Phanindra Portfolio
           </button>
           
           {/* Tagline */}
@@ -61,9 +61,8 @@ const Footer = () => {
           {/* Copyright */}
           <div className="border-t border-background/20 pt-6">
             <p className="text-sm text-background/60 flex items-center justify-center">
-              © {currentYear} John Portfolio. Made with 
+              © {currentYear} Phanindra Portfolio. Made with Lovable
               <Heart className="w-4 h-4 mx-1 text-red-400" />
-              using React & Tailwind CSS
             </p>
           </div>
         </div>
