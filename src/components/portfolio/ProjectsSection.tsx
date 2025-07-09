@@ -4,42 +4,78 @@ import { Button } from "@/components/ui/button";
 import { Github, ExternalLink, Calendar } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [{
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce application built with React, Node.js, and MongoDB. Features include user authentication, product catalog, shopping cart, payment integration, and admin dashboard.",
-    image: "photo-1556742049-0cfed4f6a45d",
-    technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe", "JWT"],
-    github: "https://github.com",
-    demo: "https://demo.com",
-    date: "2024",
-    highlights: ["Payment integration with Stripe", "Real-time inventory management", "Responsive design with Tailwind CSS", "RESTful API with comprehensive error handling"]
+  title: "Deepfake Detection System",
+  description: "An AI-based video analysis system that detects deepfake videos using CNN and MTCNN. The app allows users to upload videos and classifies them as REAL or FAKE with confidence scores via a Flask-based interface.",
+  image: "photo-1719924289340-8cfe4dfa6a5d", // replace this with your actual uploaded image ID or asset path
+  technologies: ["Python", "Flask", "TensorFlow", "OpenCV", "MTCNN"],
+  github: "https://github.com/PhanindraSunkara/Deep_Fake_Detection",
+  date: "Dec 2024- April 2025",
+  highlights: [
+    "Face detection using MTCNN",
+    "CNN-based video frame classification",
+    "Real-time deepfake prediction via web interface",
+    "Responsive UI with upload and result display",
+    "Trained on FaceForensics++, DFDC datasets"
+  ]
   }, {
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features. Built with modern web technologies.",
-    image: "photo-1611224923853-80b023f02d71",
-    technologies: ["Vue.js", "Firebase", "TypeScript", "Vuetify", "Cloud Functions"],
-    github: "https://github.com",
-    demo: "https://demo.com",
-    date: "2024",
-    highlights: ["Real-time collaboration with Firebase", "Drag-and-drop task organization", "Email notifications and reminders", "Progressive Web App (PWA) capabilities"]
-  }, {
-    title: "Weather Dashboard",
-    description: "A responsive weather application that provides current conditions, forecasts, and interactive maps. Features location-based weather data and historical weather trends.",
-    image: "photo-1504608524841-42fe6f032b4b",
-    technologies: ["JavaScript", "Chart.js", "OpenWeather API", "CSS3", "Local Storage"],
-    github: "https://github.com",
-    demo: "https://demo.com",
-    date: "2023",
-    highlights: ["Integration with OpenWeather API", "Interactive charts and visualizations", "Geolocation support", "Offline functionality with local storage"]
-  }, {
-    title: "Portfolio Website",
-    description: "A responsive portfolio website showcasing projects, skills, and experience. Built with modern design principles and optimized for performance and accessibility.",
-    image: "photo-1467232004584-a241de8bcf5d",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite"],
-    github: "https://github.com",
-    demo: "https://demo.com",
-    date: "2024",
-    highlights: ["Smooth animations and transitions", "Fully responsive design", "SEO optimized", "Accessibility compliant (WCAG 2.1)"]
-  }];
+  title: "Fashion Recommendation System",
+  description: "An AI-powered application that recommends visually similar fashion items based on uploaded images. It uses deep learning for feature extraction and KNN for similarity search, integrated with a user-friendly Streamlit interface.",
+  image: "photo-1719924289340-8cfe4dfa6a5d", // Replace with your actual image ID or file path
+  technologies: ["Python", "Streamlit", "ResNet50", "OpenCV", "KNN"],
+  github: "https://github.com/PhanindraSunkara/Fashion_Recommendation_system",
+  date: "May 2024",
+  highlights: [
+    "Feature extraction using ResNet50",
+    "Image similarity matching with KNN",
+    "User upload interface with real-time recommendations",
+    "Visual search based on clothing images",
+    "Built using Streamlit for easy deployment"
+  ]
+}, {
+  title: "Plant Disease Detection System",
+  description: "A deep learning-based application that detects plant leaf diseases using image classification. The system uses CNN to classify diseases from leaf images and helps farmers and botanists take early action.",
+  image: "photo-1719924289340-8cfe4dfa6a5d", // Replace with actual image ID or path
+  technologies: ["Python", "TensorFlow", "Keras", "OpenCV", "Streamlit"],
+  github: "https://github.com/PhanindraSunkara/Plant_Disease_Detection",
+  date: "March 2025",
+  highlights: [
+    "Disease classification using Convolutional Neural Networks",
+    "Image preprocessing with OpenCV",
+    "Supports multiple crop types and disease classes",
+    "Deployed using Streamlit for easy accessibility",
+    "Promotes early diagnosis for better crop yield"
+  ]
+}, {
+  title: "Text Emotion Detection System",
+  description: "A machine learning web app that predicts the emotional tone of user input text using Logistic Regression and vectorization techniques. It displays the emotion, confidence score, and a matching emoji via a simple Flask interface.",
+  image: "photo-1719924289340-8cfe4dfa6a5d", // Replace with your actual image ID or path
+  technologies: ["Python", "Flask", "scikit-learn", "TfidfVectorizer", "NeatText"],
+  github: "https://github.com/PhanindraSunkara/Text_Emotion_Detection",
+  date: "November 2023",
+  highlights: [
+    "Emotion classification using Logistic Regression",
+    "Text preprocessing with NeatText",
+    "Real-time prediction with emoji feedback",
+    "Confidence score visualization",
+    "Built with Flask and deployed locally"
+  ]
+}, 
+  {
+  title: "Flight Fare Prediction System",
+  description: "A machine learning-based web app that predicts flight ticket prices based on travel details like airline, date, source, and destination. Built using regression models and deployed with a simple Streamlit UI.",
+  image: "photo-1719924289340-8cfe4dfa6a5d", // Replace with your image path or ID
+  technologies: ["Python", "Streamlit", "Pandas", "scikit-learn", "Matplotlib"],
+  github: "https://github.com/PhanindraSunkara/Flight_Fare_prediction",
+  date: "March 2023",
+  highlights: [
+    "Predicts flight fares using regression algorithms",
+    "User-friendly input form via Streamlit",
+    "Trained on real airline fare datasets",
+    "Feature engineering for date, duration, and airline",
+    "Useful for travel planning and price analysis"
+  ]
+},
+];
   return <section id="projects" className="py-20 bg-section-bg">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
