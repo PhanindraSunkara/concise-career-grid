@@ -121,11 +121,11 @@ const CertificationsSection = () => {
                 
                 <div className="space-y-1 text-sm text-muted-foreground">
                   <p className="font-medium text-primary">{cert.issuer}</p>
-                  <div className="flex items-center">
-                    <Calendar className="w-3 h-3 mr-1" />
-                    Issued: {cert.date}
-                
-                </div>
+                   <div className="flex items-center">
+                     <Calendar className="w-3 h-3 mr-1" />
+                     Issued: {cert.date}
+                   </div>
+                 </div>
               </CardHeader>
 
               <CardContent className="space-y-4">

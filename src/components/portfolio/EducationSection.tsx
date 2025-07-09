@@ -33,7 +33,7 @@ const EducationSection = () => {
         "Chemistry",
       ],
      
-    }
+    },
     {
       degree: "Secondary Education",
       institution: "Vijaya Rani High School",
@@ -115,8 +115,7 @@ const EducationSection = () => {
                       ))}
                     </div>
                   </div>
-
-                 
+                </div>
               </CardContent>
             </Card>
           ))}

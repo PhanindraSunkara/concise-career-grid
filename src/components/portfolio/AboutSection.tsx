@@ -1,17 +1,12 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { Code, Palette, Database, Globe } from "lucide-react";
+import { Code, Palette, Database, Globe, Brain } from "lucide-react";
 
 const AboutSection = () => {
   const skills = [
-   <div className="space-y-4 text-sm md:text-base">
-  <p>🖥 <strong>Programming Languages:</strong> Python, C, Java (basic)</p>
-  <p>🤖 <strong>AI/ML:</strong> Machine Learning, Deep Learning, CNN, NLP, ResNet, MTCNN</p>
-  <p>📊 <strong>Tools & Frameworks:</strong> Scikit-learn, Flask, Streamlit, OpenCV, CountVectorizer</p>
-  <p>🧠 <strong>Soft Skills:</strong> Teamwork, Communication, Adaptability, Time Management</p>
-  <p>🗃 <strong>Database:</strong> SQL, NoSQL</p>
-  <p>🧑‍💻 <strong>Others:</strong> Git, VS Code, MS Office, Excel, PowerPoint</p>
-  </div>
+    "Python", "C", "Java", "Machine Learning", "Deep Learning", "CNN", "NLP", 
+    "ResNet", "MTCNN", "Scikit-learn", "Flask", "Streamlit", "OpenCV", 
+    "SQL", "NoSQL", "Git", "VS Code"
   ];
 
   const highlights = [
