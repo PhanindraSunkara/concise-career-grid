@@ -20,7 +20,7 @@ const ProjectsSection = () => {
   }, {
   title: "Fashion Recommendation System",
   description: "An AI-powered application that recommends visually similar fashion items based on uploaded images. It uses deep learning for feature extraction and KNN for similarity search, integrated with a user-friendly Streamlit interface.",
-  image: "public/Fashion.jpg", 
+  image: "concise-career-grid/public/Fashion.jpg", 
   technologies: ["Python", "Streamlit", "ResNet50", "OpenCV", "KNN"],
   github: "https://github.com/PhanindraSunkara/Fashion_Recommendation_system",
   date: "May 2024",
