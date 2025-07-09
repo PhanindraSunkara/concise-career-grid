@@ -124,10 +124,7 @@ const CertificationsSection = () => {
                   <div className="flex items-center">
                     <Calendar className="w-3 h-3 mr-1" />
                     Issued: {cert.date}
-                  </div>
-                  {cert.validUntil !== "Permanent" && (
-                    <p className="text-xs">Valid until: {cert.validUntil}</p>
-                  )}
+                
                 </div>
               </CardHeader>
 
