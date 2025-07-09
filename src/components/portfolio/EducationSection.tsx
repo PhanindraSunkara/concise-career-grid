@@ -5,45 +5,48 @@ import { GraduationCap, Calendar, MapPin } from "lucide-react";
 const EducationSection = () => {
   const education = [
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "University of Technology",
-      location: "New York, NY",
-      period: "2022 - 2026",
-      gpa: "3.8/4.0",
+      degree: "Bachelor of Technology in Computer Science(Artificial Intelligence & Machine Learning)",
+      institution: "Kalasalingam Academy of Research and Education",
+      location: "Sriviliputhur,Tamilnadu",
+      period: "2021 - 2025",
+      gpa: "8.27/10",
       description: "Focusing on software engineering, data structures, algorithms, and web development. Active member of the Computer Science Society and coding club.",
       coursework: [
-        "Data Structures & Algorithms",
-        "Software Engineering",
-        "Database Systems",
-        "Web Development",
+        "Artificial Intelligence",
         "Machine Learning",
+        "Deep Learning",
+        "Database Systems",
+        "Data Structures & Algorithms",
         "Computer Networks"
       ],
-      achievements: [
-        "Dean's List (Fall 2023, Spring 2024)",
-        "Winner - University Hackathon 2024",
-        "Vice President - CS Society"
-      ]
+     
     },
     {
-      degree: "High School Diploma",
-      institution: "Central High School",
-      location: "Brooklyn, NY",
-      period: "2018 - 2022",
-      gpa: "3.9/4.0",
-      description: "Graduated Summa Cum Laude with focus on STEM subjects. President of Computer Club and Math Honor Society member.",
+      degree: "Intermediate Education",
+      institution: "Deeksha junior College",
+      location: "Kanchikacherla, Andhra Pradesh",
+      period: "2019 - 2021",
+      score: "969/1000",
       coursework: [
-        "AP Computer Science A",
-        "AP Calculus BC",
-        "AP Physics C",
-        "AP Statistics",
-        "Advanced Programming"
+        "Mathematics",
+        "Physiscs",
+        "Chemistry",
       ],
-      achievements: [
-        "Valedictorian",
-        "National Merit Scholar",
-        "1st Place - State Programming Competition"
-      ]
+     
+    }
+    {
+      degree: "Secondary Education",
+      institution: "Vijaya Rani High School",
+      location: "Kanchikacherla, Andhra Pradesh",
+      period: "2018 - 2019",
+      gpa: "9.7/10",
+      coursework: [
+        "Telugu,Hindi,English",
+        "Mathematics",
+        "Science",
+        "Social Studies",
+      ],
+     
     }
   ];
 
@@ -113,19 +116,7 @@ const EducationSection = () => {
                     </div>
                   </div>
 
-                  {/* Achievements */}
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-3">Achievements</h4>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      {edu.achievements.map((achievement, achievementIndex) => (
-                        <li key={achievementIndex} className="flex items-start">
-                          <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                          {achievement}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
+                 
               </CardContent>
             </Card>
           ))}
