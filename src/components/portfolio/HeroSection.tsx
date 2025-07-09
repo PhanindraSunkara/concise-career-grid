@@ -29,8 +29,7 @@ const HeroSection = () => {
             <span className="text-hero-secondary text-5xl">Phanindra Portfolio</span>
           </h1>
           
-          <p className="text-xl md:text-2xl mb-4 text-white/90 font-light mx-[30px]">AI & Machine Learning Developer 
- Deep Learning | Computer vision Enthusiast</p>
+          <p className="text-xl mb-4 text-white/90 font-light mx-[30px] text-center md:text-2xl">AI & Machine Learning Developer   </p>
           
           <p className="text-lg mb-8 text-white/80 max-w-2xl mx-auto leading-relaxed">Passionate about building intelligent, real-world applications using Aiml . Currently seeking internship opportunities to grow and contribute to innovative projects.</p>
 
