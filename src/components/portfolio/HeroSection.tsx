@@ -29,7 +29,7 @@ const HeroSection = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            John <span className="text-hero-secondary">Portfolio</span>
+            <span className="text-hero-secondary">Portfolio</span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-4 text-white/90 font-light">
