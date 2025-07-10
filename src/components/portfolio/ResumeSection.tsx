@@ -4,18 +4,18 @@ import { Download, FileText, Eye, Mail } from "lucide-react";
 
 const ResumeSection = () => {
   const handleDownload = () => {
-    // In a real implementation, this would trigger the download of an actual PDF file
+    // Direct download from Google Drive
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/file/d/1Fg5rOSO_k1LXwnzL7yy1BtL9t0L4qIMb/view?usp=drivesdk'; // This would be the actual path to your resume PDF
-    link.download = 'Phanindra.Resume.pdf';
+    link.href = 'https://drive.google.com/uc?export=download&id=1Fg5rOSO_k1LXwnzL7yy1BtL9t0L4qIMb';
+    link.download = 'Phanindra_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
   const handlePreview = () => {
-    // In a real implementation, this would open the resume in a new tab or modal
-    window.open('/resume.pdf', '_blank');
+    // Open Google Drive preview in new tab
+    window.open('https://drive.google.com/file/d/1Fg5rOSO_k1LXwnzL7yy1BtL9t0L4qIMb/view?usp=drivesdk', '_blank');
   };
 
   const resumeHighlights = [
