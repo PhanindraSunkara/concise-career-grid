@@ -136,16 +136,10 @@ const ProjectsSection = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-3 pt-4">
-                  <Button variant="outline" size="sm" className="flex-1" asChild>
+                  <Button variant="outline" size="sm" className="w-full" asChild>
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
                       <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </a>
-                  </Button>
-                  <Button size="sm" className="flex-1" asChild>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Live Demo
+                      View Code
                     </a>
                   </Button>
                 </div>

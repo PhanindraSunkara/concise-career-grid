@@ -136,26 +136,6 @@ const CertificationsSection = () => {
           ))}
         </div>
 
-        {/* Additional Learning */}
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-card rounded-lg p-8 max-w-2xl mx-auto shadow-card">
-            <h3 className="text-2xl font-bold mb-4 text-foreground">
-              Continuous Learning
-            </h3>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
-              I'm committed to staying current with the latest technologies and best practices. 
-              Currently pursuing additional certifications in cloud architecture and machine learning.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Badge variant="outline" className="text-sm">
-                Currently Learning: Docker & Kubernetes
-              </Badge>
-              <Badge variant="outline" className="text-sm">
-                Next Goal: AWS Solutions Architect
-              </Badge>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

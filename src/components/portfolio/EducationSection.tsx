@@ -93,7 +93,7 @@ const EducationSection = () => {
                         {edu.period}
                       </div>
                       <div className="font-semibold text-primary">
-                        GPA: {edu.gpa}
+                        {edu.gpa ? `GPA: ${edu.gpa}` : `Score: ${edu.score}`}
                       </div>
                     </div>
                   </div>
