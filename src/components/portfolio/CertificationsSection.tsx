@@ -48,9 +48,6 @@ const CertificationsSection = () => {
    
   ];
 
-  const getStatusColor = (status: string) => {
-    return status === "Active" ? "bg-green-100 text-green-800" : "bg-yellow-100 text-yellow-800";
-  };
 
   const getLogoPlaceholder = (logo: string) => {
     const colors = {
@@ -80,14 +77,10 @@ const CertificationsSection = () => {
           {certifications.map((cert, index) => (
             <Card key={index} className="shadow-card hover:shadow-card-hover transition-all duration-300 group animate-fade-up">
               <CardHeader className="pb-4">
-                <div className="flex items-start justify-between mb-3">
+                <div className="flex items-start mb-3">
                   <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${getLogoPlaceholder(cert.logo)}`}>
                     <Award className="w-6 h-6" />
                   </div>
-                  <Badge className={`text-xs ${getStatusColor(cert.status)}`}>
-                    <CheckCircle className="w-3 h-3 mr-1" />
-                    {cert.status}
-                  </Badge>
                 </div>
                 
                 <CardTitle className="text-lg font-bold text-foreground leading-tight">

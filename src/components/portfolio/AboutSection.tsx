@@ -100,12 +100,6 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* Highlights Grid */}
-          <div className="grid gap-6 animate-slide-in-right">
-            {highlights.map((highlight, index) => <Card key={index} className="shadow-card hover:shadow-card-hover transition-all duration-300 hover:scale-105">
-                
-              </Card>)}
-          </div>
         </div>
       </div>
     </section>;
