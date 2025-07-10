@@ -6,7 +6,7 @@ const AboutSection = () => {
     {
       category: "Programming Languages",
       icon: Code,
-      items: ["Python", "C", "Java"]
+      items: ["Python", "C", "Java(Basic)"]
     },
     {
       category: "AI & Machine Learning",
@@ -26,7 +26,7 @@ const AboutSection = () => {
     {
       category: "Tools & Technologies",
       icon: Terminal,
-      items: ["Git", "VS Code", "PyCharm", "MS Office", "Excel", "PowerPoint"]
+      items: ["Git", "Github",  "VS Code", "PyCharm", "MS Word", "Excel", "PowerPoint"]
     }
   ];
  
