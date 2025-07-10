@@ -12,7 +12,7 @@ const CertificationsSection = () => {
       credentialId: "83F39FA8642E3734",
       description: "validates a foundational understanding of artificial intelligence concepts and their implementation using Azure services..",
       skills: ["Artificial Intelligence", "Machine Learning", "Deep Learning", "NLP"],
-      verificationUrl: "https://learn.microsoft.com/en-us/users/phanindrasai-3752/credentials/certification/azure-ai-fundamentals?tab=credentials-tab",
+      verificationUrl: "https://learn.microsoft.com/api/credentials/share/en-gb/PhanindraSai-3752/83F39FA8642E3734?sharingId=68E92FD6DEF9015D",
       logo: "microsoft"
     },
     {
@@ -22,7 +22,7 @@ const CertificationsSection = () => {
       credentialId: "I650-3275",
       description: "Foundational knowledge of cloud services and how they are provided with Microsoft Azure.",
       skills: ["Cloud Concepts", "Azure core Services", "Security & Identity"],
-      verificationUrl: "https://learn.microsoft.com/en-us/users/phanindrasai-3752/certifications/certification-print/certification.azure-fundamentals?source=docs",
+      verificationUrl: "https://learn.microsoft.com/api/credentials/share/en-us/PhanindraSai-3752/B92518CD12597C46?sharingId=68E92FD6DEF9015D",
       logo: "microsoft"
     },
     {
@@ -30,47 +30,22 @@ const CertificationsSection = () => {
       issuer: "Coursera",
       date: "March 2025",
       credentialId: "BWBRIPEFFF4Z",
-      description: "Comprehensive program covering React, JavaScript, HTML/CSS, version control, and UX/UI principles.",
+      description: "Covering foundational concepts of deep learning, backpropagation, and building neural networks.",
       skills: ["Computer Vision", "Artificial Neural Networks", "Performance Tuning", "Supervised Learning"],
       verificationUrl: "https://coursera.org/verify/BWBRIPEFFF4Z",
       logo: "coursera"
     },
     {
-      title: "Microsoft Azure Fundamentals",
-      issuer: "Microsoft",
-      date: "August 2023",
-      credentialId: "AZ-900-2023-321",
-      status: "Active",
-      validUntil: "August 2026",
-      description: "Foundational knowledge of cloud services and how they are provided with Microsoft Azure.",
-      skills: ["Azure Services", "Cloud Computing", "Virtual Machines", "Storage"],
-      verificationUrl: "https://docs.microsoft.com/en-us/learn/certifications/",
-      logo: "microsoft"
-    },
-    {
-      title: "Responsive Web Design",
-      issuer: "freeCodeCamp",
-      date: "June 2023",
-      credentialId: "FCC-RWD-654",
-      status: "Active",
-      validUntil: "Permanent",
-      description: "Comprehensive course covering HTML, CSS, responsive design principles, and modern web development.",
-      skills: ["HTML5", "CSS3", "Responsive Design", "Flexbox", "CSS Grid"],
-      verificationUrl: "https://www.freecodecamp.org/certification/",
-      logo: "freecodecamp"
-    },
-    {
-      title: "JavaScript Algorithms and Data Structures",
-      issuer: "freeCodeCamp",
-      date: "July 2023",
-      credentialId: "FCC-JS-987",
-      status: "Active",
-      validUntil: "Permanent",
-      description: "In-depth study of JavaScript programming, algorithms, data structures, and problem-solving techniques.",
-      skills: ["JavaScript", "Algorithms", "Data Structures", "Problem Solving"],
-      verificationUrl: "https://www.freecodecamp.org/certification/",
-      logo: "freecodecamp"
+      title: "Python(Basic)",
+      issuer: "HackerRank",
+      date: "February 2024",
+      credentialId: "f3dcf0272",
+      description: "Certified in Python (Basic) by HackerRank, demonstrating foundational programming skills and problem-solving using Python.",
+      skills: ["Operators", "strings", "Objects,types and classes"],
+      verificationUrl: "https://www.hackerrank.com/certificates/f3dcf0272175",
+      logo: "hackerrank"
     }
+   
   ];
 
   const getStatusColor = (status: string) => {
