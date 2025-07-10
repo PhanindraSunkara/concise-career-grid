@@ -1,8 +1,34 @@
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
-import { Code, Palette, Database, Globe, Brain } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Code, Palette, Database, Globe, Brain, Cpu, Zap, Wrench, Terminal, Cloud } from "lucide-react";
 const AboutSection = () => {
-  const skills = ["Python", "C", "Java", "Machine Learning", "Deep Learning", "CNN", "NLP", "ResNet", "MTCNN", "Scikit-learn", "Flask", "Streamlit", "OpenCV", "SQL", "NoSQL", "Git", "VS Code"];
+  const skillCategories = [
+    {
+      category: "Programming Languages",
+      icon: Code,
+      items: ["Python", "C", "Java", "JavaScript"]
+    },
+    {
+      category: "AI & Machine Learning",
+      icon: Brain,
+      items: ["Machine Learning", "Deep Learning", "CNN", "NLP", "ResNet", "MTCNN"]
+    },
+    {
+      category: "Frameworks & Libraries",
+      icon: Wrench,
+      items: ["Scikit-learn", "Flask", "Streamlit", "OpenCV", "TensorFlow", "Keras"]
+    },
+    {
+      category: "Databases",
+      icon: Database,
+      items: ["MySQL", "NoSQL", "DBMS"]
+    },
+    {
+      category: "Tools & Technologies",
+      icon: Terminal,
+      items: ["Git", "VS Code", "PyCharm", "MS Office", "Excel", "PowerPoint"]
+    }
+  ];
   const highlights = [{
     icon: Code,
     title: "Frontend Development",
@@ -60,13 +86,32 @@ const AboutSection = () => {
               </p>
             </div>
 
-            {/* Skills */}
+            {/* Skills Categories */}
             <div className="mt-8">
-              <h4 className="text-lg font-semibold mb-4 text-foreground">Technical Skills</h4>
-              <div className="flex flex-wrap gap-2">
-                {skills.map((skill, index) => <Badge key={index} variant="secondary" className="text-sm">
-                    {skill}
-                  </Badge>)}
+              <h4 className="text-lg font-semibold mb-6 text-foreground">Technical Skills</h4>
+              <div className="grid gap-4">
+                {skillCategories.map((skillGroup, index) => {
+                  const IconComponent = skillGroup.icon;
+                  return (
+                    <Card key={index} className="shadow-sm hover:shadow-md transition-all duration-300">
+                      <CardHeader className="pb-2">
+                        <CardTitle className="flex items-center text-base font-semibold text-foreground">
+                          <IconComponent className="w-5 h-5 mr-2 text-primary" />
+                          {skillGroup.category}
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent className="pt-0">
+                        <div className="flex flex-wrap gap-2">
+                          {skillGroup.items.map((skill, skillIndex) => (
+                            <Badge key={skillIndex} variant="secondary" className="text-xs">
+                              {skill}
+                            </Badge>
+                          ))}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
               </div>
             </div>
           </div>

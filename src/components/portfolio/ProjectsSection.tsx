@@ -6,7 +6,7 @@ const ProjectsSection = () => {
   const projects = [{
   title: "Deepfake Detection System",
   description: "An AI-based video analysis system that detects deepfake videos using CNN and MTCNN. The app allows users to upload videos and classifies them as REAL or FAKE with confidence scores via a Flask-based interface.",
-  image: "public/deep fake.jpg", 
+  image: "/deep fake.jpg", 
   technologies: ["Python", "Flask", "TensorFlow", "OpenCV", "MTCNN"],
   github: "https://github.com/PhanindraSunkara/Deep_Fake_Detection",
   date: "Dec 2024- April 2025",
@@ -20,7 +20,7 @@ const ProjectsSection = () => {
   }, {
   title: "Fashion Recommendation System",
   description: "An AI-powered application that recommends visually similar fashion items based on uploaded images. It uses deep learning for feature extraction and KNN for similarity search, integrated with a user-friendly Streamlit interface.",
-  image: "concise-career-grid/public/Fashion.jpg", 
+  image: "/Fashion.jpg", 
   technologies: ["Python", "Streamlit", "ResNet50", "OpenCV", "KNN"],
   github: "https://github.com/PhanindraSunkara/Fashion_Recommendation_system",
   date: "May 2024",
@@ -34,7 +34,7 @@ const ProjectsSection = () => {
 }, {
   title: "Plant Disease Detection System",
   description: "A deep learning-based application that detects plant leaf diseases using image classification. The system uses CNN to classify diseases from leaf images and helps farmers and botanists take early action.",
-  image: "public/Plant.jpg", 
+  image: "/Plant.jpg", 
   technologies: ["Python", "TensorFlow", "Keras", "OpenCV", "Streamlit"],
   github: "https://github.com/PhanindraSunkara/Plant_Disease_Detection",
   date: "March 2025",
@@ -48,7 +48,7 @@ const ProjectsSection = () => {
 }, {
   title: "Text Emotion Detection System",
   description: "A machine learning web app that predicts the emotional tone of user input text using Logistic Regression and vectorization techniques. It displays the emotion, confidence score, and a matching emoji via a simple Flask interface.",
-  image: "public/text.jpg", 
+  image: "/text.jpg", 
   technologies: ["Python", "Flask", "scikit-learn", "TfidfVectorizer", "NeatText"],
   github: "https://github.com/PhanindraSunkara/Text_Emotion_Detection",
   date: "November 2023",
@@ -63,7 +63,7 @@ const ProjectsSection = () => {
   {
   title: "Flight Fare Prediction System",
   description: "A machine learning-based web app that predicts flight ticket prices based on travel details like airline, date, source, and destination. Built using regression models and deployed with a simple Streamlit UI.",
-  image: "public/flight.jpg", 
+  image: "/flight.jpg", 
   technologies: ["Python", "Streamlit", "Pandas", "scikit-learn", "Matplotlib"],
   github: "https://github.com/PhanindraSunkara/Flight_Fare_prediction",
   date: "March 2023",
@@ -92,7 +92,7 @@ const ProjectsSection = () => {
           {projects.map((project, index) => <Card key={index} className="shadow-card hover:shadow-card-hover transition-all duration-300 group overflow-hidden animate-fade-up">
               {/* Project Image */}
               <div className="relative h-48 bg-gradient-card overflow-hidden">
-                <img src={`https://images.unsplash.com/${project.image}?w=500&h=300&fit=crop`} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
