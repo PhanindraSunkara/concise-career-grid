@@ -24,6 +24,7 @@ const ResumeSection = () => {
       items: [
         "Bachelor of Technology in Computer Science",
         "GPA: 8.27/10",
+        "Completed Bachelor's in Computer Science and Engineering with a strong foundation in programming, data structures, and machine learning.Actively engaged in coding competitions and real-world projects that sparked my interest in AI and software development.",
       ]
     },
     {
@@ -106,7 +107,7 @@ const ResumeSection = () => {
               </div>
               
               <p className="text-sm text-muted-foreground">
-                Last updated: January 2024 • PDF Format • 2 pages
+                Last updated: July 2025 • PDF Format • 4 pages
               </p>
             </CardContent>
           </Card>
