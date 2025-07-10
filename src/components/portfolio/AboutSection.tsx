@@ -6,7 +6,7 @@ const AboutSection = () => {
     {
       category: "Programming Languages",
       icon: Code,
-      items: ["Python", "C", "Java", "JavaScript"]
+      items: ["Python", "C", "Java"]
     },
     {
       category: "AI & Machine Learning",
@@ -21,7 +21,7 @@ const AboutSection = () => {
     {
       category: "Databases",
       icon: Database,
-      items: ["MySQL", "NoSQL", "DBMS"]
+      items: ["MySQL", "DBMS"]
     },
     {
       category: "Tools & Technologies",
@@ -29,23 +29,7 @@ const AboutSection = () => {
       items: ["Git", "VS Code", "PyCharm", "MS Office", "Excel", "PowerPoint"]
     }
   ];
-  const highlights = [{
-    icon: Code,
-    title: "Frontend Development",
-    description: "Creating responsive, interactive user interfaces with modern frameworks and libraries."
-  }, {
-    icon: Database,
-    title: "Backend Development",
-    description: "Building robust APIs and server-side applications with focus on performance and scalability."
-  }, {
-    icon: Brain,
-    title: "AI/ML Applications",
-    description: "Developing end-to-end machine learning solutions for real world applications."
-  }, {
-    icon: Globe,
-    title: "Full Stack Solutions",
-    description: "End-to-end development from concept to deployment, ensuring seamless integration."
-  }];
+ 
   return <section id="about" className="py-20 bg-section-bg">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
