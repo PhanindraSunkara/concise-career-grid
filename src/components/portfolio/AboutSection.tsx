@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Code, Palette, Database, Globe, Brain, Cpu, Zap, Wrench, Terminal, Cloud } from "lucide-react";
+
 const AboutSection = () => {
   const skillCategories = [
     {
@@ -30,7 +31,8 @@ const AboutSection = () => {
     }
   ];
  
-  return <section id="about" className="py-20 bg-section-bg">
+  return (
+    <section id="about" className="py-20 bg-section-bg">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
@@ -39,8 +41,8 @@ const AboutSection = () => {
           <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* About Content */}
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          {/* About Content - Left Side */}
           <div className="animate-fade-up">
             <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-foreground">
              Hello! I'm an AI & ML Enthusiast building intelligent digital solutions.
@@ -48,11 +50,10 @@ const AboutSection = () => {
             
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I’m a passionate Computer Science graduate with hands-on experience in 
+                I'm a passionate Computer Science graduate with hands-on experience in 
                 machine learning, computer vision, and full-stack development. My journey 
                 began with curiosity about how intelligent systems work and has evolved 
                 into building data-driven applications that solve real-world problems.
-
               </p>
               
               <p>
@@ -69,39 +70,40 @@ const AboutSection = () => {
                 meaningful impact.
               </p>
             </div>
-
-            {/* Skills Categories */}
-            <div className="mt-8">
-              <h4 className="text-lg font-semibold mb-6 text-foreground">Technical Skills</h4>
-              <div className="grid gap-4">
-                {skillCategories.map((skillGroup, index) => {
-                  const IconComponent = skillGroup.icon;
-                  return (
-                    <Card key={index} className="shadow-sm hover:shadow-md transition-all duration-300">
-                      <CardHeader className="pb-2">
-                        <CardTitle className="flex items-center text-base font-semibold text-foreground">
-                          <IconComponent className="w-5 h-5 mr-2 text-primary" />
-                          {skillGroup.category}
-                        </CardTitle>
-                      </CardHeader>
-                      <CardContent className="pt-0">
-                        <div className="flex flex-wrap gap-2">
-                          {skillGroup.items.map((skill, skillIndex) => (
-                            <Badge key={skillIndex} variant="secondary" className="text-xs">
-                              {skill}
-                            </Badge>
-                          ))}
-                        </div>
-                      </CardContent>
-                    </Card>
-                  );
-                })}
-              </div>
-            </div>
           </div>
 
+          {/* Technical Skills - Right Side */}
+          <div className="animate-fade-up">
+            <h4 className="text-2xl md:text-3xl font-semibold mb-6 text-foreground">Technical Skills</h4>
+            <div className="grid gap-4">
+              {skillCategories.map((skillGroup, index) => {
+                const IconComponent = skillGroup.icon;
+                return (
+                  <Card key={index} className="shadow-sm hover:shadow-md transition-all duration-300">
+                    <CardHeader className="pb-2">
+                      <CardTitle className="flex items-center text-base font-semibold text-foreground">
+                        <IconComponent className="w-5 h-5 mr-2 text-primary" />
+                        {skillGroup.category}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="pt-0">
+                      <div className="flex flex-wrap gap-2">
+                        {skillGroup.items.map((skill, skillIndex) => (
+                          <Badge key={skillIndex} variant="secondary" className="text-xs">
+                            {skill}
+                          </Badge>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default AboutSection;

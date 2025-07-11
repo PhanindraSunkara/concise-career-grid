@@ -6,7 +6,7 @@ const ProjectsSection = () => {
   const projects = [{
   title: "Deepfake Detection System",
   description: "An AI-based video analysis system that detects deepfake videos using CNN and MTCNN. The app allows users to upload videos and classifies them as REAL or FAKE with confidence scores via a Flask-based interface.",
-  image: "/deep fake.jpg", 
+  image: "/deep%20fake.jpg", 
   technologies: ["Python", "Flask", "TensorFlow", "OpenCV", "MTCNN"],
   github: "https://github.com/PhanindraSunkara/Deep_Fake_Detection",
   date: "Dec 2024- April 2025",
